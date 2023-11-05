@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>불편한 독서</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">UNCOMFY BOOKCLUB</a>
+        <div class="menu"></div>
+    </header>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#read">Read</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <script>
+        const menu = document.querySelector('.menu');
+        const nav = document.querySelector('.nav');
+        menu.onclick = function() {
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+
+        }
+
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
+
+    <!-- banner -->
+    <section class="banner" id="home">
+        <img src="banner.jpg" class="cover">
+        <div class = "contentBx">
+            <h2>불편한 독서모임</h2>
+            <h4>다양한 사람들과 다양한 책을</h4>
+            <a href="#about" class="btn">About us</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+         <div class="title">
+            <h2>About us</h2>
+         </div>
+         <div class="contentBx">
+            <div class="content">
+                <p>책은 우리가 주변에 없는 세상을 마치 바로 옆에 있는 것처럼 보여줍니다. 과거를 보여주기도 하고, 미래를 예측하기도 하고, 추억과 슬픔을 우리에게 다시 상기시키기도 합니다. 다른 나라의 소설이나 우리가 잘 모르는 분야의 책은 우리가 갇혀 있는 우물 밖에 얼마나 다양한 것들이 있는지 알려줍니다. 우리는 우물 밖을 보기 위해 독서를 합니다. 하지만 독서에도 우물이 있는 거 같습니다. 독서에도 관성이 있습니다. 읽던 책만 읽게 되고 새로운 책을 읽어보고 싶지만 어려워 중간에 포기하고 좋아하는 도서로 돌아가기 일수입니다. 그런데 약간만 두려움을 이겨내고 조금만 인내심을 가지면 편안함이라는 중력을 이겨내면 새로운 우주가 펼쳐집니다.<br><br>흔히 혼자 뛰면 빨리 갈 수 있고 같이 뛰면 멀리 갈 수 있다고 합니다. 어쩌면 새로운 책을 읽기 위해 필요한 것은 같이 읽을 독서메이트가 아닌가 싶습니다. 같이 읽기 때문에 용기가 생기고 오기가 생겨서 끝까지 읽게 됩니다. 같이 읽기 때문에 이해가 안되는 부분에 대해서 같이 이야기를 할 수 있어 더 풍부하게 독서를 할 수 있습니다. 무엇보다 같은 책을 모두 얼마나 다르게 읽고 있는지 체험하면 너무 신기하고 재미있어서 계속 모임을 하게 됩니다. 
+                불편한 독서모임과 함께 다양한 책을 다양한 사람들과 읽어보자는 신념 아래 아직 안 읽어본 미지의 도서 우주를 탐험해보는건 어떨까요?</p>
+            </div>
+            <div class="content">
+                <div class="imgBx">
+                    <img src="bookshelf.jpg" class="cover">
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Latest Readings -->
+    <section class="read" id="read">
+        <div class="title">
+           <h2>Readings</h2>
+           <p>불편한 독서모임은 8가지 주제인 경영/경제, 역사, 과학, 철학/종교, 문화예술, 정치/사회, 외국 문학, 한국 문학의 책을 4개월 내에 읽는 것을 목표로 합니다.</p>
+        </div>
+        <div class="contentBx">
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="한국현대사.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="흑산.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="불안.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="세속의 철학자들.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="죄와벌.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="팩트풀니스.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="postColumn">
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="클래식은 처음이라.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        <h3>rrr</h3>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section> 
+
+    
+</body>
+</html>

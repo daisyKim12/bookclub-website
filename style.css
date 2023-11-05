@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --black: #333;
+    --white: #fff;
+}
+header {
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition:0.5s;
+}
+header.sticky{
+    padding: 10px 100px;
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.5em;
+    Letter-spacing: 5px;
+}
+.menu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url(menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.menu.active{
+    background: url(close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav{
+    position: fixed;
+    top:0;
+    Left:0;
+    width: 100%;
+    height: 100vh;
+    background: var(--white);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.25s;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+}
+.nav.active{
+    opacity: 1;
+    visibility: visible;
+}
+.nav li{
+    list-style: none;
+    margin: 10px 0;
+}
+.nav li a{
+    color: var(--black);
+    font-size:1.2em;
+    letter-spacing: 4px;
+    display:inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+section {
+    position:relative;
+    padding: 100px;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--white);
+}
+.cover{
+    position: absolute;
+    top:0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .contentBx{
+    position: relative;
+    z-index: 1;
+    background: rgba(252, 252, 252, 0.692);
+    padding: 50px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner .contentBx h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--black);
+    letter-spacing: 6px;
+    text-align: center;
+}
+.banner .contentBx h4{
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--black);
+    letter-spacing:  3px;
+    text-align: center;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 30px;
+    border: 2px solid var(--black);
+    color: var(--black);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.25s;
+}
+.btn:hover {
+    color: var(--white);
+    background: var(--black);
+}
+.title {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title h2 {
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.title p {
+    margin-top: 40px;
+    max-width: 700px;
+    text-align: center;   
+}
+.title h2:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 6px;
+    background: var(--black);
+}
+p {
+    color: var(--black);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: justify;    
+}
+.about .contentBx {
+    position: relative;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.about .contentBx .content {
+    position: relative;
+}
+.about .contentBx .content .imgBx {
+    min-height: 500px;
+}
+.read {
+    position: relative;
+}
+.read .contentBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top:20px;
+}
+.read .contentBx .postColumn {
+    position:relative;
+}
+.read .contentBx .postColumn .postBox {
+    position: relative;
+    width: 100%;;
+    height: 600px;
+    margin-top: 20px;
+}
